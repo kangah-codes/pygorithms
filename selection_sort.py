@@ -6,7 +6,7 @@ def selection_sort(iterable):
 			if iterable[j] < iterable[min_index]:
 				min_index = j
 		iterable[min_index], iterable[i] = iterable[i], iterable[min_index]
-	else:
-		return iterable
+	
+	return iterable
 
 print(selection_sort([45,1,2,45,4352,43]))
