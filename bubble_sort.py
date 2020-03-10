@@ -1,3 +1,5 @@
+__author__ = "Joshua Akangah"
+
 def bubble_sort(iterable):
    length = len(iterable)
 
@@ -13,4 +15,5 @@ def bubble_sort(iterable):
 
    return iterable
 
+# test
 print(bubble_sort([345,634,345,5,234534,634]))
