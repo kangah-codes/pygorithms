@@ -7,9 +7,11 @@ def postfix_eval(expression):
 
 	for i in expression:
 		try:
+			# check if the current item is a number
 			current = int(i)
 			stack.append(current)
 		except ValueError:
+			# a valueerror means that item is not an integer which means it is an operator
 			if i == '+':
 				first = stack.pop()
 				second = stack.pop()
