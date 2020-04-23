@@ -16,7 +16,7 @@ def jump_search(iterable, search):
 			return -1
 
 	if iterable[int(prev)] == search:
-		return int(prev)
+		return iterable[int(prev)]
 
 	return -1
 
