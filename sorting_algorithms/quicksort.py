@@ -1,4 +1,9 @@
-def quicksort(iterable, l, h):
+def quicksort(iterable, h, l=0):
+	"""
+	iterable -> the list to be sorted
+	l -> the index which to start from, which is 0 by default
+	h -> the index of the last element
+	"""
 	if l < h:
 		p = partition(iterable, l, h)
 		quicksort(iterable, l, p-1)
@@ -15,5 +20,5 @@ def partition(iterable, l, h):
 	return i
 
 a = [1,2,43543,234,54,0,-1,5]
-quicksort(a, 0,len(a)-1)
+quicksort(a,len(a)-1)
 print(a)
